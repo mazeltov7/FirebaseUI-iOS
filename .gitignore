@@ -29,3 +29,5 @@ Pods/
 Podfile.lock
 *.xcworkspace/
 samples/**/GoogleService-Info.plist
+# clientIDとか書いてるし、これgit --cachedで消してるので注意(必要な場合はfork元から取ってね)
+samples/swift/FirebaseUI-demo-swift/Info.plist

@@ -129,7 +129,10 @@ class FUIAuthViewController: UITableViewController {
 
       // If you haven't set up your authentications correctly these buttons
       // will still appear in the UI, but they'll crash the app when tapped.
-      self.authUI?.providers = self.getListOfIDPs()
+
+        // emailだけでいいので、providersに特に追加して入れる必要無し
+//      self.authUI?.providers = self.getListOfIDPs()
+//        print("listIDP: \(self.getListOfIDPs())")
 
       let controller = self.authUI!.authViewController()
       controller.navigationBar.isHidden = self.customAuthorizationSwitch.isOn
