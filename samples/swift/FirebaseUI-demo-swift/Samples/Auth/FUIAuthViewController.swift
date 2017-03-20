@@ -84,6 +84,7 @@ class FUIAuthViewController: UITableViewController {
     self.tableView.selectRow(at: IndexPath(row: Providers.Twitter.rawValue, section: UISections.Providers.rawValue),
                              animated: false,
                              scrollPosition: .none)
+    
 
   }
 
@@ -125,7 +126,8 @@ class FUIAuthViewController: UITableViewController {
 
     } else {
       self.authUI?.delegate = self.customAuthorizationSwitch.isOn ? self.customAuthUIDelegate : nil;
-      self.authUI?.isSignInWithEmailHidden = !self.isEmailEnabled()
+        // emailはつねにtrueにするので消しとく
+        //      self.authUI?.isSignInWithEmailHidden = !self.isEmailEnabled()
 
       // If you haven't set up your authentications correctly these buttons
       // will still appear in the UI, but they'll crash the app when tapped.
