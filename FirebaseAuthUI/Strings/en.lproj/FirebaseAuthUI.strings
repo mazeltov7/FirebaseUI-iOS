@@ -1,8 +1,8 @@
 /* Title for auth picker screen. */
-"AuthPickerTitle" = "Welcome";
+"AuthPickerTitle" = "ようこそ";
 
 /* Sign in with email button label. */
-"SignInWithEmail" = "Sign in with email";
+"SignInWithEmail" = "メールでログイン";
 
 /* Title for email entry screen, email text field placeholder. */
 "EnterYourEmail" = "Enter your email";
